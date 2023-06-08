@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditNoteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbarofeditnote"
+        android:background="@color/white">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/edittitleofnote"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:text="DD/MM/YYYY"
+        style="?android:spinnerStyle"
+        android:id="@+id/editdateofnote"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:background="#faf7f7"
+        android:gravity="top|left"
+        android:textColor="@color/black"
+        android:hint="Enter your note content here"
+        android:layout_below="@id/editdateofnote"
+        android:padding="15dp"
+        android:id="@+id/editcontentofnote">
+
+    </EditText>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:foregroundGravity="bottom"
+        android:id="@+id/saveeditnote"
+        android:src="@drawable/ic_outline_upgrade_24"
+        app:borderWidth="0dp"
+        android:backgroundTint="#14EDED"
+        android:outlineSpotShadowColor="@color/black"
+        app:fabCustomSize="70dp"
+        app:maxImageSize="60dp">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+
+</RelativeLayout>
